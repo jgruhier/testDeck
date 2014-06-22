@@ -1,26 +1,29 @@
 ---
-title       : Test deck
-subtitle    : 
-author      : 
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+title:      "Reproducible Pitch"
+subtitle:   "devdataprod_project"
+author: "jgruhier"
+date: "22 Jun 2014"
+output: ioslides_presentation
 ---
 
-## Read-And-Delete
+## Car comparator
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+**Car comparator** is a shiny application which displays car specification and help you to compare cars between each other and with average values.
 
---- .class #id 
+## Inputs
 
-## Slide 2
+- car's name or part of it
+- 1 or 2 car's name
+- reactive textbox
 
-```{r, fig.height=5, fig.width=5}
-plot(1 : 10, 1 : 10)
+## Outputs
+
+- full specification for each car
+- comparaison with average hp and mpg
+
+## Output sample
+
+```{r}
+head(mtcars)
 ```
 
