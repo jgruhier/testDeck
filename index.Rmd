@@ -3,12 +3,20 @@ title:      "Reproducible Pitch"
 subtitle:   "devdataprod_project"
 author: "jgruhier"
 date: "22 Jun 2014"
-output: ioslides_presentation
+job         : internet
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
 ---
 
 ## Car comparator
 
 **Car comparator** is a shiny application which displays car specification and help you to compare cars between each other and with average values.
+
+---
 
 ## Inputs
 
@@ -16,10 +24,14 @@ output: ioslides_presentation
 - 1 or 2 car's name
 - reactive textbox
 
+---
+
 ## Outputs
 
 - full specification for each car
 - comparaison with average hp and mpg
+
+---
 
 ## Output sample
 
